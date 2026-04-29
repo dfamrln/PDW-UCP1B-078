@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Join Tech Community</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+    <h1>Form Pendaftaran Anggota</h1>
+
+    <nav>
+        <a href="./index.html">Home</a> |
+        <a href="./gallery.html">Gallery</a>
+    </nav>
+
+    <form onsubmit="tambahAnggota(event)">
+
+        <label>Nama:</label><br>
+        <input type="text" id="nama" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label>Bidang Minat:</label><br>
+        <select id="minat">
+            <option>Web Development</option>
+            <option>Cyber Security</option>
+            <option>UI/UX Design</option>
+            <option>Data Science</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Daftar</button>
+
+    </form>
+
+    <h3>Data yang diinput:</h3>
+
+    <div id="hasil"></div>
+
+</body>
+
+</html>
