@@ -23,10 +23,7 @@ body {
 }
 
 /* HEADINGS (Solusi untuk tulisan yang tidak presisi) */
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     text-align: center;
     /* Memastikan semua judul ke tengah */
     color: #1e40af;
@@ -172,9 +169,7 @@ button:hover {
 }
 
 /* MEDIA ELEMENTS (Center everything) */
-img,
-iframe,
-audio {
+img, iframe, audio {
     display: block;
     margin: 20px auto;
     border-radius: 15px;
