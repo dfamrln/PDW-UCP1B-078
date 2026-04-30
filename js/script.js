@@ -1,4 +1,4 @@
-let anggota = [
+let anggota = JSON.parse(localStorage.getItem("anggota")) || [
     { nama: "Andi", email: "andi@gmail.com", minat: "Web Development" },
     { nama: "Budi", email: "budi@gmail.com", minat: "Cyber Security" },
     { nama: "Citra", email: "citra@gmail.com", minat: "UI/UX Design" }
@@ -39,6 +39,7 @@ function tambahAnggota(event) {
     };
 
     anggota.push(data);
+    localStorage.setItem("anggota", JSON.stringify(anggota));
 
     alert("Data berhasil ditambahkan!");
 
